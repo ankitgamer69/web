@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id"
+        content="945524361954-s9gos1g2jkmbud514nlglcj8sun246es.apps.googleusercontent.com">
+    <title>Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="progressbar"></div>
+    <header>
+        <div class="nav">
+            <div class="logo">
+                <img src="logo.svg"> Ankit Gamer
+            </div>
+
+            <div class="nav_link" id="nav_link">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+
+            </div>
+
+            <div class="signin">
+                <h3 class="alert alert-primary"></h3>
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                <div class="data">
+                    <p>Name</p>
+                    <p id="name" class="alert alert-success"></p>
+                    <p>Profile pic</p>
+                    <img id="image" class="rounded-circle" width="100" height="100">
+                    <p>Email</p>
+                    <p id="email"></p>
+                    <button type="button" class="btn btn-danger" onclick="signout();">Signout</button>
+                </div>
+            </div>
+            <div class="check_icon">
+                <input hidden="" class="check-icon" id="check-icon" name="check-icon" type="checkbox">
+                <label class="icon-menu" for="check-icon">
+                    <div class="bar bar--1"></div>
+                    <div class="bar bar--2"></div>
+                    <div class="bar bar--3"></div>
+                </label>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="poster">
+            <div class="main_text">
+                <h1>
+                    Welcome to webpage of Ankit Gamer
+                </h1>
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid veniam optio iste blanditiis
+                    architecto? Adipisci ratione dolores doloremque alias dicta provident, similique perspiciatis
+                    praesentium harum cumque tempore quae reiciendis ea eligendi animi. Nam, corrupti rerum!</h3>
+            </div>
+            <div class="main_img">
+                <img src="png.png" alt="image">
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="posttext">
+                <h2>Posts</h2>
+                <spam class="post-caption">More from us</spam>
+            </div>
+            <div class="post_box">
+                <div class="posts">
+                    <div class="posts_img">
+                        <a href=""><img src="logo.svg" alt="post"></a>
+                    </div>
+                    <div class="posts_text">
+                        <h4>Post title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex culpa atque velit consequatur
+                            quia tenetur sed voluptatibus, earum quis accusamus?</p>
+                    </div>
+                </div>
+                <div class="posts">
+                    <div class="posts_img">
+                        <a href=""><img src="logo.svg" alt="post"></a>
+                    </div>
+                    <div class="posts_text">
+                        <h4>Post title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex culpa atque velit consequatur
+                            quia tenetur sed voluptatibus, earum quis accusamus?</p>
+                    </div>
+                </div>
+                <div class="posts">
+                    <div class="posts_img">
+                        <a href=""><img src="logo.svg" alt="post"></a>
+                    </div>
+                    <div class="posts_text">
+                        <h4>Post title</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex culpa atque velit consequatur
+                            quia tenetur sed voluptatibus, earum quis accusamus?</p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+    </main>
+
+    <hr>
+    <footer>
+
+        &copy;ankit gamer 2024|All rights reserved.
+    </footer>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
